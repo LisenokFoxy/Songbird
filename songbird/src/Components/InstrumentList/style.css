@@ -1,0 +1,176 @@
+.point {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #97887c;
+}
+
+.correct-answer {
+  background: rgb(7, 146, 7);
+}
+
+.incorrect-answer {
+  background: rgb(202, 28, 28);
+}
+
+.instrument-list {
+  width: 50%;
+  font-size: 25px;
+  margin-right: 10px;
+  padding: 0px !important;
+  border: 1px solid #361b1b;
+  border-radius: 10px;
+  background: rgb(92, 40, 5);
+  box-shadow: 1px 1px 5px rgb(0, 0, 0);
+}
+
+.element {
+  height: 16.666%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ffffff;
+  color: wheat;
+  padding: 10px 0;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.element:hover {
+  background: #b45700;
+}
+
+.element:last-child {
+  border-bottom: none;
+}
+
+.element:first-child {
+  padding-top: 10px;
+}
+
+.element div {
+  margin-right: 25px;
+}
+
+.instrument-list ul {
+  margin: 0 !important;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto;
+  
+}
+
+.instrument-info {
+  width: 49%;
+  padding: 1rem 1rem !important;
+  border: 1px solid #361b1b;
+  border-radius: 10px;
+  background: rgb(92, 40, 5);
+  box-shadow: 1px 1px 5px rgb(0, 0, 0);
+  color: wheat;
+}
+
+.instrument-description img{
+  max-width: 200px;
+  max-height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 15px;
+}
+
+.instrument-description {
+  display: flex;
+  justify-content: space-around;
+}
+
+.instrument-body li:first-child {
+  font-size: 25px;
+}
+
+.instrument-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+
+.instrument-body li:first-child {
+  border-bottom: 1px solid #ffffff;
+}
+
+.next-level {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: #1d1c1a;
+  color: white;
+  box-shadow: 1px 1px 5px black;
+  
+}
+
+.next-level p {
+  margin: 15px 0 !important;
+}
+
+.correct-answer-next-level {
+  background-color: #B58900;
+  color: white;
+}
+
+.hide {
+  display: none;
+}
+
+.instrument-list ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.rhap_container {
+  background:rgb(255, 142, 37);
+  border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+  .instrument-description {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 770px) {
+  .instrument-info-audio-player {
+    width: 240px;
+    min-width: 240px;
+  }
+  .instrument-description-info {
+    font-size: 15px;
+  }
+  .rhap_container {
+    min-width: 240px;
+  }
+}
+
+@media (max-width: 560px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+  .instrument-list, .instrument-info {
+    width: 100%;
+  }
+  .instrument-info-audio-player {
+    width: 260px;
+  }
+  .rhap_container {
+    min-width: 260px;
+  }
+}
