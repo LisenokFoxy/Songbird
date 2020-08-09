@@ -36,6 +36,10 @@ const config = {
         test: /\.svg$/,
         loader: "svg-inline-loader",
       },
+      {
+        test: /\.(ogg|mp3|wav)$/,
+        use: ["file-loader"],
+      },
     ],
   },
   resolve: {
