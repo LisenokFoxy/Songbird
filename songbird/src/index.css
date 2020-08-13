@@ -13,8 +13,9 @@ code {
 } */
 
 body {
-  background: #1d1c1c;
-  color: white;
+  /* background: #1d1c1c; */
+  background-image: url('./assets/images/background.jpg');
+  /* color: white; */
 }
 
 .wrapper {
@@ -34,14 +35,6 @@ body {
   justify-content: space-around;
   margin-top: 15px;
   border-radius: 8px;
-}
-
-.logo {
-  background-image: url("./assets/images/logo.svg");
-  width: 200px;
-  height: 55px;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 .score {
